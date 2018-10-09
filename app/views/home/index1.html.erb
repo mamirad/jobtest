@@ -1,0 +1,34 @@
+
+<div style="width:800px; margin-left: 250px; margin-top: 100px;" >
+	<div class="row">
+		<div class="col-md-6">
+			<h3 class="text-right">
+	<%= link_to "Log in",  new_user_session_path %>
+</h3>
+<h1>Where Work Happens</h1>
+<p>
+	when your team need to kick off a project, hire a new employee deploy some code review a sale contract finalize next year budget's measure on A/B test plan your next office opening and more, slack has your covered.
+</p>
+<div class="row">
+	<div class="col-md-6">
+<%= email_field_tag :email, params[:email], placeholder: "your Emai", autofocus: true, class: "form-control search-box input-lg" %>
+
+
+	</div>
+	<div class="col-md-3">
+			<%= button_tag(type: :submit, class: "btn btn-lg btn-success") do %>
+          <i class="fa fa-search"></i> Look up a stock
+        <% end %>
+	</div>
+	</div>
+	<br>
+	<p>Already user slack 	<%= link_to "Log in",  new_user_session_path %></p>
+	
+
+		</div>
+		<div class="col-md-6">
+			<img class="irc_mi" src="https://a.slack-edge.com/43f70/marketing/img/home/home_illo.png">
+		</div>
+	</div>
+	
+</div>
